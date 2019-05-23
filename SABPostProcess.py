@@ -47,6 +47,11 @@ log.debug("Category: %s." % category)
 log.debug("Categories: %s." % categories)
 log.debug("NZB: %s." % nzb)
 
+print('*******************')
+print("Category passed by NZB: {}".format(category.lower()))
+print("Categories available in scripts: {}".format(categories))
+print('*******************')
+
 if category.lower() not in categories:
     log.error("No valid category detected.")
     sys.exit()
